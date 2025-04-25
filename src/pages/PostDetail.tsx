@@ -33,6 +33,7 @@ const PostDetailPage = () => {
   const handleUpdate = () => {
     if (!title || !text) {
       message.error("Please fill in both fields");
+      alert("Please fill in both fields")
       return;
     }
   
@@ -50,7 +51,7 @@ const PostDetailPage = () => {
       });
       setTimeout(() => {
         navigate("/");
-      }, 5000);
+      }, 500);
     }
   };
   const handleDelete = () => {
